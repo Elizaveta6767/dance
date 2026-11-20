@@ -84,16 +84,14 @@ html {
     .logo {
         gap: 10px; 
     }
-    .logo img {
+    .header .logo img {
         width: 40px;
         height: auto;
     }
-
-
     .name {
         
-        font-size: var(--mini-text); 
-        line-height: 1.1; 
+        font-size: var(--min-mob-text); 
+        line-height: 20px; 
     }
     .burger img {
         width: 30px; 
@@ -358,12 +356,38 @@ hr {
         display: none;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .card_full {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px; 
+        margin: 30px 15px;
+    }
+    .title{
+        font-size: var(--title-mobile);
+    }
+    .mini_text{
+        font-size: var(--min-mob-text);
+    }
+    .card_num {
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        width: 100%;
+    }
+    .num {
+        font-size: var(--name-mob); 
+    }
+}
 
 .name_part{
     font-size: var(--nav-name);
     font-weight: bold;
     margin: 59px 0 59px 0;
+}
+@media screen and (max-width: 1024px) {
+    .name_part{
+        font-size: var(--name-mob);
+    }
 }
 
 .blocks {
@@ -613,38 +637,53 @@ hr {
 }
 
 
-.main_lesson{
+.main_lesson {
     margin: var(--margin-block);
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
-.lesson{
+
+.lesson {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 119px;
+    min-height: 119px;
     background-color: var(--block);
     gap: 30px;
+    box-sizing: border-box;
     transition: background-color 0.3s, transform 0.1s;
 }
+
 .lesson:hover {
     background-color: var(--accent);
 }
+
 .lesson:active {
     transform: scale(0.98);
 }
-.square{
+
+.square {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 0 0 30px;
+    flex-shrink: 0;
 }
-.text_sq{
+
+.text_sq {
     font-size: var(--mini-text);
     padding: 5px 10px 5px 0;
+    flex: 1; 
+    word-wrap: break-word; 
+    padding-left: 15px; 
+    text-align: left; 
+}
+.number{
+    font-size: var(--nav-name);
+    font-weight: bold;
 }
 @media screen and (max-width: 1024px) {
     .main_lesson{
@@ -656,26 +695,36 @@ hr {
         padding: 5px 0;
     }
 }
-@media screen and (max-width: 768px){
-    .main_lesson{
+@media screen and (max-width: 768px) {
+    .main_lesson {
         margin: var(--margin-tablet);
+        gap: 15px;
     }
-    .lesson{
-        margin: 2px;
-        width: 100%;
-        padding: 5px 0;
-        
-    }
-    .text_sq{
-        font-size: var(--size-mobile);
+
+    .lesson {
         margin: 0;
+        padding: 15px 15px;
+        gap: 10px;
+    }
+
+    .square {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .text_sq {
+        font-size: var(--size-mobile);
+        line-height: 1.4;
+        margin: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .number{
+        font-size: var(--title-mobile);
     }
 }
 
-.number{
-    font-size: var(--nav-name);
-    font-weight: bold;
-}
 .wrapper {
     display: flex;
     justify-content: space-around; 
@@ -890,6 +939,12 @@ button:active {
         padding: 20px;
         box-sizing: border-box;
     }
+    .fund span{
+        font-size: var(--title-mobile);
+    }
+    .fund li{
+        font-size: var(--min-mob-text);
+    }
 }
 .fotogal {
     margin: var(--margin-block);
@@ -953,12 +1008,12 @@ button:active {
 }
 @media screen and (max-width: 768px) {
     .big_foto {
-        width: 80%;
+        width: 68%;
     }
 
     .right img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 }
 .contact {
@@ -1059,6 +1114,35 @@ button:active {
         padding: 40px 30px;
     }
 }
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info_title span{
+        font-size: var(--title-mobile);
+    }
+    .info_title p {
+        font-size: var(--size-mobile);
+    }
+    .signup-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+    .input-group {
+        margin-bottom: 25px;
+    }
+    .submit-btn {
+        padding: 15px 20px;
+    }
+    input#contact{
+        font-size: var(--min-mob-text);
+    }
+    input#name{
+        font-size: var(--min-mob-text);
+    }
+}
+
 .footer {
     width: 100%;
 }
@@ -1220,7 +1304,7 @@ button:active {
     }
     .footer-links h3,
     .footer-contacts h3 {
-        font-size: var(--mini-text);
+        font-size: var(--min-mob-text);
     }
     .footer-links a,
     .footer-contacts li {
