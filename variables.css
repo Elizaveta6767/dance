@@ -1,0 +1,30 @@
+:root{
+    --background: #000;
+    --accent: #da0000;
+    --pramery: #fff;
+    --block: #242424;
+    --accent_two: #840000;
+
+
+    --margin-block: 100px 0;
+    --nav: 20px;
+    --mini-text: 16px;
+    --main-text: 20px;
+    --header: 65px;
+    --font-btn: 16px;
+    --nav-name: 36px;
+    --title: 32px;
+    --month: 10px;
+    --footer: 13px;
+    --margin-tablet: 60px 0;
+    --punkt: 12px;
+    --size-mobile: 14px;
+    --title-mobile: 40px;
+    --num-tablet: 48px;
+    --heading-tablet: 18px;
+    --card-mobile: 24px;
+    --down-footer: 11px;
+    --margin-mobile: 60x 0;
+    --margin-mobile: 20px 40px;
+    --text-h2: 20px;
+}

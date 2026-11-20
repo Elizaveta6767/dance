@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/Group 1.svg" alt="logo">
+            <span class="name">УЛИЧНАЯ<br>РОМАНТИКА</span>
+        </div>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <div class="sections" id="mobile-menu">
+            <a href="#about" class="name">О НАС</a>
+            <a href="#direct" class="name">НАПРАВЛЕНИЯ</a>
+            <a href="#money" class="name">ЦЕНЫ</a>
+            <a href="#form" class="name">ЗАПИСЬ</a>
+        </div>
+        <label for="burger-toggle" class="burger" aria-label="Открыть меню">
+            <img src="assets/burger.svg" alt="burger">
+        </label>
+    </header>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="hero">
+        <div class="info">
+            <p class="red">[ТАНЦЫ / ДВИЖЕНИЕ / ХАРАКТЕР]</p>
+            <p class="big">УЛИЧНАЯ<br>РОМАНТИКА</p>
+            <p class="description">
+                Танцы для мужчин — это про контроль над телом и выносливость. Никакой воды: разминка, база, отработка
+                связок и импровизация. Ты удивишься, на что способно твое тело через месяц регулярных тренировок
+            </p>
+            <button class="btn">ПОДРОБНЕЕ</button>
+        </div>
+        <div class="foto_card">
+            <img src="assets/new_dance.png" alt="foto_card">
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="about" id="about">
+        <span class="name_part">О НАС</span>
+    </div>
+    <div class="about_us">
+        <div class="text">
+            <span class="title">Танцы — это не про «красиво»,<br>это про свободу</span>
+            <p class="mini_text"> Забудь стереотипы. Настоящий уличный танец — это про силу,характер и умение владеть
+                своим телом. Мы учим мужчин двигаться свободно и уверенно, снимать стресс после работы и чувствовать
+                ритм города. Наши тренировки — это жесткая работа над координацией и классная мужская атмосфера. Без
+                лишнего пафоса, оценивающих взглядов и глупых правил. Приходи таким, какой ты есть — мы поможем
+                раскрыться.</p>
+        </div>
+        <div class="card_full">
+            <div class="card_num">
+                <span class="num">8</span>
+                <span class="heading">ЛЕТ</span>
+                <span class="inf">За это время мы<br>выступили на 50+<br>городских ивентах</span>
+            </div>
+            <div class="card_num">
+                <span class="num">500+</span>
+                <span class="heading">УЧЕНИКОВ</span>
+                <span class="inf">Кто-то пришел<BR>просто попробовать,<br>а кто-то уже<br>преподает</span>
+            </div>
+            <div class="card_num">
+                <span class="num">15</span>
+                <span class="heading">ТРЕНЕРОВ</span>
+                <span class="inf">Действующие танцоры и <BR> победители баттлов, а<br>не теоретики</span>
+            </div>
+            <div class="card_num">
+                <span class="num">3</span>
+                <span class="heading">ФИЛИАЛА</span>
+                <span class="inf">В центре и спальных<br>районах — добираться<br>удобно</span>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="direct" id="direct">
+        <span class="name_part">НАПРАВЛЕНИЯ</span>
+    </div>
+    
+    <div class="blocks">
+        <div class="block_breking js-open-modal">
+            <div class="breking_header">
+                <p>НОМЕР ДИСЦИПЛИНЫ / 01</p>
+                <img class="zeuc" src="./assets/power.svg" alt="power" width="50px" height="50px">
+            </div>
+            <div class="breking_title">
+                <h1>БРЕЙКИНГ</h1>
+            </div>
+            <div class="breking_text">
+                <p>Спорт и танец в одном. Учимся работать с весом тела, делать джайбы, фризы и пауэры. Здесь важна выносливость.</p>
+            </div>
+        </div>
+        <div class="double_block">
+            <div class="first_double_block">
+                <div class="breking_header">
+                    <p>НОМЕР ДИСЦИПЛИНЫ / 02</p>
+                </div>
+                <div>
+                    <h1>ХИП ХОП</h1>
+                </div>
+                <div class="breking_text">
+                    <p>Базовый стиль улиц. Учимся чувствовать бит, двигаться мощно и уверенно, импровизировать под любой трек.</p>
+                </div>
+            </div>
+            <div class="first_double_block">
+                <div class="breking_header">
+                    <p>НОМЕР ДИСЦИПЛИНЫ / 03</p>
+                </div>
+                <div>
+                    <h1>ХАУС</h1>
+                </div>
+                <div class="breking_text">
+                    <p>Кардио-драйв. Быстрая работа ног и свобода. Учим выносливости и импровизации.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="modal-overlay js-modal">
+        <div class="modal-content">
+            <button class="modal-close js-close-modal">&times;</button>
+            <div class="modal-image">
+                <img src="assets/modal.png" alt="Брейкинг">
+            </div>
+            <div class="modal-text">
+                <h2>БРЕЙКИНГ</h2>
+                <p>Брейкинг — уличный танец из Нью-Йорка 1970-х, сегодня ещё и спорт (был на Олимпиаде-2024). Главные элементы: топрок (танец стоя), джайбы (резкие связки), фризы (замирания на руках/голове), пауэры (вращения — мельница, флайр) и футворк (работа ногами, 6-step). Соревнуются в баттлах (1 на 1, 2 на 2, команда на команду), где судьи оценивают технику, музыкальность, оригинальность и характер, а также в неформальных cypher-кругах. Это часть хип-хоп-культуры с акцентом на уважение, импровизацию и музыкальность. Начинать стоит с базы (топрок, 6-step, простые фризы), физподготовки (планка, отжимания, баланс, растяжка), поиска студии или cypher-площадки и обязательной разминки с защитой кистей — травмы запястий и головы здесь не редкость.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const openBtn = document.querySelector('.js-open-modal');
+            const closeBtn = document.querySelector('.js-close-modal');
+            const modal = document.querySelector('.js-modal');
+
+            if (openBtn && closeBtn && modal) {
+                openBtn.addEventListener('click', () => {
+                    modal.classList.add('show');
+                });
+
+                closeBtn.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                });
+
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('show');
+                    }
+                });
+            }
+        });
+    </script>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="name_part">
+        <span class="name_part">ЗАНЯТИЕ</span>
+    </div>
+    <div class="main_lesson">
+        <div class="lesson">
+            <div class="square">
+                <span class="number">01</span>
+            </div>
+            <div class="square_text">
+                <p class="text_sq">Разогреваем суставы и связки. Качаем базу, чтобы тело проснулось. Без этого на
+                    танцпол не
+                    выходим — бережем колени и спину.</p>
+            </div>
+        </div>
+        <div class="lesson">
+            <div class="square">
+                <span class="number">02</span>
+            </div>
+            <div class="square_text">
+                <p class="text_sq">Ставим базу. Разбираем, как правильно переносить вес, держать осанку и делать базовые
+                    движения. Отрабатываем до автоматизма.</p>
+            </div>
+        </div>
+        <div class="lesson">
+            <div class="square">
+                <span class="number">03</span>
+            </div>
+            <div class="square_text">
+                <p class="text_sq">Собираем выученное в комбинацию под бит. Учимся двигаться в потоке, а не просто
+                    повторять
+                    движения как робот.</p>
+            </div>
+        </div>
+        <div class="lesson">
+            <div class="square">
+                <span class="number">04</span>
+            </div>
+            <div class="square_text">
+                <p class="text_sq">Самое интересное. Делимся на группы, включаем трек и пробуем применять связку в деле.
+                    Учимся не бояться сцены и импровизировать.</p>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="money" id="money">
+        <span class="name_part">ЦЕНЫ</span>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <h3>РАЗОВОЕ</h3>
+            <div class="price">1 000 ₽ / ЗА ОДНО ЗАНЯТИЕ</div>
+            <ul>
+                <li>Любые направления клуба</li>
+                <li>Срок действия 2 месяца</li>
+                <li>Заморозка абонемента (если заболел)</li>
+            </ul>
+            <button>ПРИОБРЕСТИ</button>
+        </div>
+        <div class="card">
+            <h3>АБОНЕМЕНТ</h3>
+            <div class="price">5 500 ₽ / ЗА 8 ЗАНЯТИЙ</div>
+            <ul>
+                <li>Любое направление на выбор</li>
+                <li>Без обязательств и взносов</li>
+                <li>Действует 1 день</li>
+            </ul>
+            <button>ПРИОБРЕСТИ</button>
+        </div>
+        <div class="card">
+            <h3>БЕЗЛИМИТ</h3>
+            <div class="price">8 900 ₽ / В МЕСЯЦ</div>
+            <ul>
+                <li>Неограниченное количество тренировок</li>
+                <li>Личный график</li>
+                <li>Постановка танца под ключ</li>
+            </ul>
+            <button>ПРИОБРЕСТИ</button>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="name_part">
+        <span class="name_part">ОТЗЫВЫ</span>
+    </div>
+    <section class="reviews-section">
+        <div class="reviews-grid">
+            <div class="review-card">
+                <p class="review-text">
+                    Всегда думал, что танцы — это не мое. Пришел на пробное просто ради интереса, был зажат как робот.
+                    Сейчас, спустя полгода, выхожу на баттлы. Тут никто не смеется над твоими ошибками. Тренер видит,
+                    где ты тупишь, и объясняет по-мужски, понятным языком. Уверенность в себе выросла в разы.
+                </p>
+                <span class="review-author">Никита</span>
+            </div>
+            <div class="review-card">
+                <p class="review-text">
+                    Искал способ поддерживать форму и снимать напряжение после работы, но обычный спортзал казался
+                    скучным. Танцы оказались отличной альтернативой. Тренировки требуют хорошей выносливости и
+                    концентрации, но при этом дают невероятную свободу.
+                </p>
+                <span class="review-author">Дмитрий</span>
+            </div>
+            <div class="review-card">
+                <p class="review-text">
+                    Пришел в клуб, чтобы научиться двигаться уверенно и перестать стесняться на вечеринках. Результат
+                    превзошел ожидания: помимо танцевальной базы и чувства ритма, я получил хорошую физическую
+                    подготовку. Радует, что здесь нет лишнего пафоса — только дисциплина, уважение друг к другу.
+                </p>
+                <span class="review-author">Алексей</span>
+            </div>
+        </div>
+    </section>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="name_part">
+        <span class="name_part">ТВОЯ ТРАЕКТОРИЯ</span>
+    </div>
+    <div class="your">
+        <div class="fund">
+            <p class="month">МЕСЯЦ 1-3</p>
+            <span>ФУНДАМЕНТ</span>
+            <ul>
+                <li>ОФП и растяжка</li>
+                <li>Контроль баланса</li>
+                <li>Базовые шаги и стойки</li>
+            </ul>
+        </div>
+        <div class="fund">
+            <p class="month">МЕСЯЦ 4-8</p>
+            <span>ТЕХНИКА</span>
+            <ul>
+                <li>Переходы и флоу</li>
+                <li>Первые силовые элементы</li>
+                <li>Музыкальность</li>
+            </ul>
+        </div>
+        <div class="fund">
+            <p class="month">1 ГОД</p>
+            <span>ФРИСТАЙЛ</span>
+            <ul>
+                <li>Свой стиль движения</li>
+                <li>Выход в круг</li>
+                <li>Участие в баттлах</li>
+            </ul>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="name_part">
+        <span class="name_part">ФОТОГАЛЕРЕЯ</span>
+    </div>
+    <div class="fotogal">
+        <div class="right">
+            <img src="assets/left.svg" alt="left">
+        </div>
+        <img src="assets/dance_boy.png" alt="foto" class="mini_foto">
+        <img src="assets/boys.png" alt="boyz" class="big_foto">
+        <img src="assets/teach.png" alt="dance" class="mini_foto">
+        <div class="right">
+            <img src="assets/right.svg" alt="right">
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="form" id="form">
+        <span class="name_part">ФОРМА</span>
+    </div>
+    <div class="contact">
+        <div class="info_title">
+            <span>ВЛИВАЙСЯ</span>
+            <p>Оставь контакты, мы перезвоним и<br>подберем удобное время для<br>первого занятия. Первый шаг -<br>самый
+                сложный.</p>
+        </div>
+        <div class="signup-form">
+            <div class="input-group">
+                <label for="name">[ 01 / ИМЯ ]</label>
+                <input type="text" id="name" name="name" placeholder="КАК ТЕБЯ ЗОВУТ?" required>
+            </div>
+            <div class="input-group">
+                <label for="contact">[ 02 / КОНТАКТ ]</label>
+                <input type="text" id="contact" name="contact" placeholder="TELEGRAM ИЛИ ТЕЛЕФОН" required>
+            </div>
+            <button type="submit" class="submit-btn">
+                <span>СТАТЬ ЧАСТЬЮ КОМАНДЫ</span>
+            </button>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="brand-logo">
+                <img src="assets/Group 1.svg" alt="logo" width="30px" height="30px">
+                <div class="brand-title">УЛИЧНАЯ<br>РОМАНТИКА</div>
+            </div>
+            <div class="brand-info">
+                <p class="brand-desc">Мужской танцевальный<br>клуб. Учим двигаться<br>свободно и уверенно с<br>2016 года</p>
+                <div class="social-links">
+                    <img src="assets/tg.svg" alt="tg" width="30px" height="30px">
+                    <img src="assets/youtube.svg" alt="yt" width="30px" height="30px">
+                    <img src="assets/watsup.svg" alt="wu" width="30px" height="30px">
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="footer-links">
+                <h3>РАЗДЕЛЫ</h3>
+                <ul>
+                    <li><a href="№">направления</a></li>
+                    <li><a href="#">о нас</a></li>
+                    <li><a href="#">расписание</a></li>
+                    <li><a href="#">цены</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacts">
+                <h3>СВЯЗАТЬСЯ</h3>
+                <ul>
+                    <li>+7 (999) 123-45-67</li>
+                    <li>info@street-romance.ru</li>
+                    <li class="work-hours">Ежедневно с 10:00 до 22:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="up">
+        <p>© 2026 Танцевальный клуб<br>«Уличная романтика». Все права<br>защищены.</p>
+        <p>[Политика конфиденциальности] | [Договор оферты]</p>
+    </div>
+</footer>
+</body>
+
+</html>
